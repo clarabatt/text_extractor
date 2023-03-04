@@ -8,7 +8,6 @@ authors = ["Clara Battesini <clarabattesini@gmail.com>"]
 python = "^3.10"
 Django = "^4.1.7"
 pytesseract = "^0.3.10"
-django-bootstrap-v5 = "^1.0.11"
 
 [tool.poetry.dev-dependencies]
 
