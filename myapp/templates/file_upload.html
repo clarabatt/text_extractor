@@ -1,9 +1,0 @@
-{% extends "main_page.html" %}
-
-{% block content %}
-<form action="/file_upload/" method="POST">
-    {% csrf_token %}
-    <input type="file" id="myFile" name="filename" accept=".pdf,.jpeg,.png,.jpg">
-    <input type="submit">
-</form>
-{% endblock %}

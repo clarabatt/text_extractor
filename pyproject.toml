@@ -5,9 +5,9 @@ description = ""
 authors = ["Clara Battesini <clarabattesini@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-Django = "^4.1.7"
+python = "^3.9"
 pytesseract = "^0.3.10"
+fastapi = "^0.95.1"
 
 [tool.poetry.dev-dependencies]
 
