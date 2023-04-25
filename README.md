@@ -1,18 +1,25 @@
 # Text Extractor
 
-Extracts text from pdfs and images.
+Extracts text from pdfs and images using [tesseract](https://pypi.org/project/pytesseract/).
+
 
 ## How to run
 
-Install the dependencies:
+This project uses Poetry as dependency manager. [To install Poetry follow their documentation.](https://python-poetry.org/docs/)
 
-```
-poetry init
+Installing dependencies:
+
+```shell
+poetry install
 ```
 
 Running the project:
 
-```
+
+```shell
+# Activate the virtual environment
 poetry shell
-python3 manage.py runserver 0.0.0.0:8080
+
+# Running the project
+uvicorn main:app --reload
 ```
