@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
     <title>Image Text Extractor</title>
 </head>
+
 <body>
     <h1>Image Text Extractor</h1>
     <form action="/upload" method="post" enctype="multipart/form-data">
@@ -21,4 +23,5 @@
         {{ text }}
     </p>
 </body>
+
 </html>
