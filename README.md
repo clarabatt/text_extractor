@@ -21,5 +21,5 @@ Running the project:
 poetry shell
 
 # Running the project
-uvicorn main:app --reload
+uvicorn text_extractor.main:app --reload
 ```

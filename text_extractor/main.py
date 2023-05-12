@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from typing import Union
-import process_image
+import text_extractor.process_image as process_image
 
 app = FastAPI()
 
