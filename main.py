@@ -12,15 +12,17 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
 
+
 @app.get("/")
 def read_root(req: Request):
     return templates.TemplateResponse("home.html", {"request": req})
 
+
 @app.post("/upload")
 async def upload_file(req: Request, file: UploadFile or None = None):
     if not file:
-        return templates.TemplateResponse("home.html", { "request": req, "text":  "No file uploaded"})
+        return templates.TemplateResponse("home.html", {"request": req, "text":  "No file uploaded"})
     else:
-        text = process_image.extract(file.filename)
-        return templates.TemplateResponse("home.html", { "request": req, "text":  text})
-
+        content = await file.read()
+        text = process_image.extract(content)
+        return templates.TemplateResponse("home.html", {"request": req, "text":  text})
