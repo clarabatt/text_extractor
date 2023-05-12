@@ -11,12 +11,13 @@
 
 <body>
     <div class="container">
-        <h1>Image Text Extractor</h1>
+        <h1 class="title">Image Text Extractor</h1>
         <form action="/upload" method="post" enctype="multipart/form-data">
             <label>
-                File upload
-                <input type="file" id="file" name="file" />
+                <img alt="A blue cloud with an up white arrow inside" src="{{ url_for('static', path='img/cloud_icon.png') }}"/>
+                Browse Files to upload
             </label>
+            <input type="file" id="file" name="file" />
             <button type="submit">Upload</button>
         </form>
         

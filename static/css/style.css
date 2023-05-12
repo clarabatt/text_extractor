@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #292929;
     background-color: #E9F0FE;
+}
 
+.title {
+    margin: 3rem 0;
 }
 
 .container {
@@ -16,8 +23,33 @@ body {
 }
 
 form {
+    width: 50%;
     background-color: #fff;
     border-radius: 8px;
-    padding: 64px;
+    padding: 1.5rem;
     box-shadow: -5px -5px 60px 15px rgba(30, 119, 204, 0.1), 5px 5px 60px 15px rgba(30, 119, 204, 0.1);
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 3px dashed #1E77CC;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+form label > img {
+   width: 5rem; 
+
+}
+
+form input {
+    width: 100%;
+    margin: 1rem 0;
+    background: #E9F0FE;
+    border-radius: 8px;
+    padding: 1rem;
 }
