@@ -21,9 +21,14 @@
             <button type="submit">Upload</button>
         </form>
         
-        <p>
-            {{ text }}
-        </p>
+        {% if text %}
+        <div class="textBlock">
+            <h2>Text Extracted</h2>
+            <p>
+                {{ text }}
+            </p>
+        </div>
+        {% endif %}
     </div>
 </body>
 

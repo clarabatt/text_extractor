@@ -53,3 +53,16 @@ form input {
     border-radius: 8px;
     padding: 1rem;
 }
+
+.textBlock {
+    margin-top: 2rem;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: -5px -5px 60px 15px rgba(30, 119, 204, 0.1), 5px 5px 60px 15px rgba(30, 119, 204, 0.1);
+}
+
+.textBlock h2{
+    margin-top: 0;
+}
