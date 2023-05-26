@@ -28,6 +28,10 @@ form {
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: -5px -5px 60px 15px rgba(30, 119, 204, 0.1), 5px 5px 60px 15px rgba(30, 119, 204, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 form label {
@@ -36,6 +40,7 @@ form label {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
     border: 3px dashed #1E77CC;
     border-radius: 8px;
     padding: 2rem;
@@ -52,6 +57,22 @@ form input {
     background: #E9F0FE;
     border-radius: 8px;
     padding: 1rem;
+}
+
+form button {
+    background: #1E77CC;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: .75rem 1.5rem;
+    box-shadow: 2px 2px 10px 2px rgba(8, 33, 56, 0.15);
+    cursor: pointer;
+    transition: background .5s;
+}
+
+form button:hover {
+    background: #165794;
+    transition: background .5s;
 }
 
 .textBlock {
