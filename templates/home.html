@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link href="{{ url_for('static', path='css/style.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', path='img/cloud_icon.png')}}" type="image/x-icon">
+
     <title>Image Text Extractor</title>
 </head>
 
@@ -13,12 +16,21 @@
     <div class="container">
         <h1 class="title">Image Text Extractor</h1>
         <form action="/upload" method="post" enctype="multipart/form-data">
-            <label>
-                <img alt="A blue cloud with an up white arrow inside" src="{{ url_for('static', path='img/cloud_icon.png') }}"/>
-                Browse Files to upload
-            </label>
-            <input type="file" id="file" name="file" />
-            <button type="submit">Upload</button>
+            <div class="file is-normal has-name">
+                <label class="file-label">
+                  <input id="fileInput" class="file-input" type="file" name="file">
+                  <span class="file-cta">
+                    <span class="file-icon">
+                      <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">
+                      Browse a file…
+                    </span>
+                  </span>
+                  <span id="fileName" class="file-name"></span>
+                </label>
+              </div>
+            <button class="button is-info" type="submit">Upload</button>
         </form>
         
         {% if text %}
@@ -31,5 +43,5 @@
         {% endif %}
     </div>
 </body>
-
 </html>
+<script src="{{ url_for('static', path='js/index.js') }}"></script>
