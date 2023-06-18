@@ -2,6 +2,8 @@
 
 Extracts text from pdfs and images using [tesseract](https://pypi.org/project/pytesseract/).
 
+<img src="static/img/example.png" alt="My Image" width="500"/>
+
 **Technologies**
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -9,7 +11,6 @@ Extracts text from pdfs and images using [tesseract](https://pypi.org/project/py
 ![Jinja](https://img.shields.io/badge/jinja-white.svg?style=for-the-badge&logo=jinja&logoColor=black)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-
 
 ## How to run
 
