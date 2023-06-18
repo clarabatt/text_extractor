@@ -1,3 +1,4 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
 
 * {
@@ -8,6 +9,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #292929;
     background-color: #E9F0FE;
+    min-height: 100vh;
 }
 
 .title {
@@ -24,55 +26,24 @@ body {
 
 form {
     width: 50%;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: -5px -5px 60px 15px rgba(30, 119, 204, 0.1), 5px 5px 60px 15px rgba(30, 119, 204, 0.1);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-end;
+    margin: 2rem 0;
 }
 
-form label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.button {
+    margin: 0 .5rem;
+}
+
+.file, .file-label, .file-name {
     width: 100%;
-    border: 3px dashed #1E77CC;
-    border-radius: 8px;
-    padding: 2rem;
+    margin: 0 !important;
 }
 
-form label > img {
-   width: 5rem; 
-
-}
-
-form input {
-    width: 100%;
-    margin: 1rem 0;
-    background: #E9F0FE;
-    border-radius: 8px;
-    padding: 1rem;
-}
-
-form button {
-    background: #1E77CC;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: .75rem 1.5rem;
-    box-shadow: 2px 2px 10px 2px rgba(8, 33, 56, 0.15);
-    cursor: pointer;
-    transition: background .5s;
-}
-
-form button:hover {
-    background: #165794;
-    transition: background .5s;
+.file-name {
+    background-color: #fff;
 }
 
 .textBlock {

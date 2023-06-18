@@ -31,7 +31,3 @@ poetry shell
 # Running the project
 uvicorn text_extractor.main:app --reload
 ```
-
-## Design 
-
-Design by Charles Kasasira - [Check it on Figma](https://www.figma.com/community/file/1188553051526232861/Custom-Upload-Field)
