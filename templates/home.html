@@ -27,7 +27,11 @@
                       Browse a file…
                     </span>
                   </span>
-                  <span id="fileName" class="file-name"></span>
+                  <span id="fileName" class="file-name">
+                    {% if filename %}
+                        {{ filename }}
+                    {% endif %}
+                  </span>
                 </label>
               </div>
             <button class="button is-info" type="submit">Upload</button>

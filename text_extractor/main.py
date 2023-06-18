@@ -24,5 +24,6 @@ async def upload_file(req: Request, file: UploadFile or None = None):
         return templates.TemplateResponse("home.html", {"request": req, "text":  "No file uploaded"})
     else:
         content = await file.read()
+        filename = file.filename
         text = process_image.extract(content)
-        return templates.TemplateResponse("home.html", {"request": req, "text":  text})
+        return templates.TemplateResponse("home.html", {"request": req, "text":  text, "filename": filename})
