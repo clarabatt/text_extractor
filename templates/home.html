@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <h1 class="title">Image Text Extractor</h1>
+        <h1 class="title is-1">Image Text Extractor</h1>
         <form action="/upload" method="post" enctype="multipart/form-data">
             <div class="file is-normal has-name">
                 <label class="file-label">
@@ -39,7 +39,7 @@
         
         {% if text %}
         <div class="textBlock">
-            <h2>Text Extracted</h2>
+            <h2 class="title is-4">Extracted Text</h2>
             <p>
                 {{ text }}
             </p>
