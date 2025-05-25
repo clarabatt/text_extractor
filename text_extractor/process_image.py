@@ -1,9 +1,17 @@
+import logging
 from io import BytesIO
-from PIL import Image
+
 import pytesseract
+from PIL import Image
+
+logger = logging.getLogger(__name__)
 
 
 def extract(content: bytes):
-    image = Image.open(BytesIO(content))
-    text = pytesseract.image_to_string(image)
-    return text
+    try:
+        image = Image.open(BytesIO(content))
+        text = pytesseract.image_to_string(image)
+        return text
+    except Exception:
+        logger.exception("OCR failed")
+        raise

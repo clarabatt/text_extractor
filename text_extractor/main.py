@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, UploadFile
+from fastapi import FastAPI, HTTPException, Request, UploadFile
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
@@ -21,7 +21,8 @@ async def upload_file(req: Request, file: UploadFile | None = None):
         return templates.TemplateResponse(
             "home.html", {"request": req, "text": "No file uploaded"}
         )
-
+    if file.contet_type not in ("image/png", "image/jpeg"):
+        raise HTTPException(400, "Unsupported file type")
     content = await file.read()
     filename = file.filename
     text = process_image.extract(content)
