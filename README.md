@@ -14,21 +14,18 @@ Extracts text from pdfs and images using [tesseract](https://pypi.org/project/py
 
 ## How to run
 
-This project uses Poetry as dependency manager. [To install Poetry follow their documentation.](https://python-poetry.org/docs/)
-
 Installing dependencies:
 
 ```shell
-poetry install
+uv sync
 ```
 
 Running the project:
 
-
 ```shell
 # Activate the virtual environment
-poetry shell
+source .venv/bin/activate
 
 # Running the project
-uvicorn text_extractor.main:app --reload
+uv run uvicorn text_extractor.main:app --reload
 ```
